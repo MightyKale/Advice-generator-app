@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap');
+
+body {
+    background: hsl(218, 23%, 16%);
+    display: block;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* Container */
+
+.container {
+    background: hsl(217, 19%, 24%);
+    height: auto;
+    width: 550px;
+    max-width: 95%;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Advice Number */
+.advice-num {
+    margin: 35px auto;
+}
+
+span {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: 13px;
+    letter-spacing: 4px;
+    color: hsl(150, 100%, 66%);
+    user-select: none;
+
+}
+
+/* Advice */
+.advice {
+    margin: 0 40px;
+}
+
+h3 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+    color: hsl(193, 38%, 86%);
+}
+
+#divider-desktop {
+    user-select: none;
+}
+
+#divider-mobile {
+    user-select: none;
+    display: none;
+}
+
+/* Dice Icon */
+
+.dice-container {
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background: hsl(150, 100%, 66%);
+    margin: auto;
+    margin-top: 30px;
+    position: relative;
+    user-select: none;
+}
+
+
+.dice-container:hover {
+    filter: brightness(90%);
+}
+
+.dice-container:active {
+    box-shadow: 0 0 15px 12px rgba(82, 255, 168, 0.2);
+}
+
+
+.dice-container img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+
+
+@media screen and (max-width: 600px) {
+    
+    #divider-desktop {
+        display: none;
+    }
+
+    #divider-mobile {
+        user-select: none;
+        display: inline;
+    }
+
+}
